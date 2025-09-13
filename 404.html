@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+      // Get the path from the URL
+      const path = window.location.pathname;
+
+      // Get the base path of the GitHub Pages repository
+      // This assumes your repo name is part of the URL, e.g., 'my-repo'
+      const base = '/<your-repo-name>'; 
+
+      // Create the new URL with the hash
+      const newUrl = `${base}/#${path}`;
+
+      // Redirect the user
+      window.location.replace(newUrl);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
